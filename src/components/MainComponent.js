@@ -121,15 +121,12 @@ class Main extends Component {
             timeout={300}
           >
             <Switch>
-              <Route path="React-JS-Project/home" component={home_page} />
-              <Route
-                path="React-JS-Project/menu/:dishId"
-                component={DishWithId}
-              />
+              <Route path="/home" component={home_page} />
+              <Route path="/menu/:dishId" component={DishWithId} />
 
               <Route
                 exact
-                path="React-JS-Project/menu"
+                path="/menu"
                 component={() => <Menu dishes={this.props.dishes} />}
               />
               <Route
@@ -143,7 +140,7 @@ class Main extends Component {
                 )}
               />
               <Route
-                path="React-JS-Project/about"
+                path="/about"
                 component={() => <About leaders={this.props.leaders.leaders} />}
               />
 
