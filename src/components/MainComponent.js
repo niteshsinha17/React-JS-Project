@@ -120,17 +120,20 @@ class Main extends Component {
             timeout={300}
           >
             <Switch>
-              <Route path="/home" component={home_page} />
+              <Route
+                path={process.env.PUBLIC_URL + "/home"}
+                component={home_page}
+              />
               <Route path="/menu/:dishId" component={DishWithId} />
 
               <Route
                 exact
-                path="/menu"
+                path={process.env.PUBLIC_URL + "/menu"}
                 component={() => <Menu dishes={this.props.dishes} />}
               />
               <Route
                 exact
-                path="/contactus"
+                path={process.env.PUBLIC_URL + "/contactus"}
                 component={() => (
                   <Contact
                     sendFeedback={this.props.feedback}
@@ -139,7 +142,7 @@ class Main extends Component {
                 )}
               />
               <Route
-                path="/about"
+                path={process.env.PUBLIC_URL + "/about"}
                 component={() => <About leaders={this.props.leaders.leaders} />}
               />
 
