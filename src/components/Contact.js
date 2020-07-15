@@ -21,94 +21,17 @@ const validEmail = (val) =>
 class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      //   firstname: "",
-      //   lastname: "",
-      //   contactno: "",
-      //   email: "",
-      //   agree: false,
-      //   contactType: "Tel.",
-      //   message: "",
-      //   touched: {
-      //     firstname: false,
-      //     lastname: false,
-      //     contactno: false,
-      //     email: false,
-      //   },
-    };
+    this.state = {};
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleInputChange = this.handleInputChange.bind(this);
   }
-  // handleInputChange(event) {
-  //   let touched_copy = { ...this.state.touched };
-  //   const target = event.target;
-  //   if (target.value.length > 0) {
-  //     touched_copy = { [target.name]: true };
-  //   } else {
-  //     touched_copy = { [target.name]: false };
-  //   }
-  //   const value = target.type === "checkbox" ? target.checked : target.value;
-  //   const name = target.name;
-  //   this.setState({
-  //     [name]: value,
-  //     touched: touched_copy,
-  //   });
-  // }
+
   handleSubmit(values) {
     console.log("Current State is:" + JSON.stringify(values));
     this.props.sendFeedback(values);
     this.props.resetFeedbackForm();
-    // event.preventDefault();
   }
 
-  // handleBlur = (field) => {
-  //   // this.setState({
-  //   //   touched: {
-  //   //     ...this.state.touched,
-  //   //     [field]: true,
-  //   //   },
-  //   // });
-  // };
-  // validate(firstname, lastname, contactno, email) {
-  //   const errors = {
-  //     firstname: "",
-  //     lastname: "",
-  //     contactno: "",
-  //     email: "",
-  //   };
-
-  //   if (this.state.touched.firstname && firstname.length < 3) {
-  //     errors.firstname = "First Name Should greater than 3 character";
-  //   } else if (this.state.touched.firstname && firstname.length > 10) {
-  //     errors.firstname = "First Name Should less than 10 character";
-  //   }
-
-  //   if (this.state.touched.lastname && lastname.length < 3) {
-  //     errors.lastname = "First Name Should greater than 3 character";
-  //   } else if (this.state.touched.lastname && lastname.length > 10) {
-  //     errors.lastname = "First Name Should less than 10 character";
-  //   }
-
-  //   const reg = /^\d+$/;
-  //   if (this.state.touched.contactno && !reg.test(contactno)) {
-  //     errors.contactno = "Contact no should be in degits";
-  //   }
-
-  //   if (
-  //     this.state.touched.email &&
-  //     email.split("").filter((x) => x === "@").length != 1
-  //   ) {
-  //     errors.email = "email should contain @";
-  //   }
-  //   return errors;
-  // }
   render() {
-    // const errors = this.validate(
-    //   this.state.firstname,
-    //   this.state.lastname,
-    //   this.state.contactno,
-    //   this.state.email
-    // );
     return (
       <div className="container">
         <div className="row">

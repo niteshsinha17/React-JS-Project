@@ -89,8 +89,6 @@ class Main extends Component {
       );
     };
 
-    // D59466766
-
     const DishWithId = ({ match }) => {
       if (match != null) {
         return (
@@ -136,7 +134,7 @@ class Main extends Component {
                 path="/contactus"
                 component={() => (
                   <Contact
-                    sendfeedback={this.props.feedback}
+                    sendFeedback={this.props.feedback}
                     resetFeedbackForm={this.props.resetFeedbackForm}
                   />
                 )}

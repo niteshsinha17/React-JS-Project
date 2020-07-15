@@ -14,7 +14,7 @@ import { Control, LocalForm, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 import CommentForm from "./CommentForm";
 import { Loading } from "./LoadingComponent";
-import { baseUrl } from "../shared/baseUrl";
+// import { baseUrl } from "../shared/baseUrl";
 import { FadeTransform, Fade, Stagger } from "react-animation-components";
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -169,16 +169,14 @@ class RenderDish extends Component {
               >
                 <div className="card">
                   <img
-                    src={baseUrl + this.props.dish["image"]}
+                    src={this.props.dish.image}
                     className="detail-dish-img"
                     alt="somrthing"
                   ></img>
                   <div>
-                    <h2 className="menu-item-name">
-                      {this.props.dish["name"]}
-                    </h2>
+                    <h2 className="menu-item-name">{this.props.dish.name}</h2>
                     <p className="menu-item-dis">
-                      {this.props.dish["description"]}
+                      {this.props.dish.description}
                     </p>
                   </div>
                 </div>
@@ -213,7 +211,7 @@ const RenderComment = (props) => {
   } else if (props.comments != null) {
     let commentList = props.comments.map((com) => {
       return (
-        <Fade in>
+        <Fade className="comment" in>
           <div key={com.id}>
             <p>{com.comment}</p>
             <p>

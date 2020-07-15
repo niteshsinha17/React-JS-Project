@@ -12,3 +12,4 @@ export const ADD_LEADER = "ADD_LEADER";
 export const LEADER_FAILED = "LEADER_FAILED";
 export const FEEDBACK_ALERT = "FEEDBACK_ALERT";
 export const FEEDBACK_ERROR = "FEEDBACK_ERROR";
+export const ADD_NEW_COMMENT = "ADD_NEW_COMMENT";

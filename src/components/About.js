@@ -8,14 +8,14 @@ import {
   Media,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import { baseUrl } from "../shared/baseUrl";
+// import { baseUrl } from "../shared/baseUrl";
 
 const About = (props) => {
   const leaderList = props.leaders.map((leader) => {
     return (
       <div key={leader.id} className="leader-card">
         <div>
-          <img src={baseUrl + leader.image} alt="no" className="leader-image" />
+          <img src={leader.image} alt="no" className="leader-image" />
         </div>
         <div className="leader-detail">
           <h3>{leader.name}</h3>
