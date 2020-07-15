@@ -143,7 +143,7 @@ class Main extends Component {
                 component={() => <About leaders={this.props.leaders.leaders} />}
               />
 
-              <Redirect to="/home" />
+              <Redirect to="/React-JS-Project/home" />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
