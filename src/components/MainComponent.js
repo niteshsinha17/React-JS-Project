@@ -121,7 +121,7 @@ class Main extends Component {
             timeout={300}
           >
             <Switch>
-              <Route path="/home" component={home_page} />
+              <Route path="home/" component={home_page} />
               <Route path="/menu/:dishId" component={DishWithId} />
 
               <Route
@@ -144,7 +144,7 @@ class Main extends Component {
                 component={() => <About leaders={this.props.leaders.leaders} />}
               />
 
-              <Redirect to="/home" />
+              <Redirect to="home/" />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
