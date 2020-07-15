@@ -6,6 +6,7 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Contact from "./Contact";
+
 import DishDetail from "./Dishdetail";
 import About from "./About";
 import { connect } from "react-redux";
@@ -120,7 +121,7 @@ class Main extends Component {
             timeout={300}
           >
             <Switch>
-              <Route path="/React-JS-Project/home" component={home_page} />
+              <Route path="/home" component={home_page} />
               <Route path="/menu/:dishId" component={DishWithId} />
 
               <Route
@@ -143,7 +144,7 @@ class Main extends Component {
                 component={() => <About leaders={this.props.leaders.leaders} />}
               />
 
-              <Redirect to="/React-JS-Project/home" />
+              <Redirect to="/home" />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
