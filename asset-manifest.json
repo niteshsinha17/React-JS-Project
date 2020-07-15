@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/niteshsinha17/React-JS-Project.git/static/css/main.db750617.chunk.css",
+    "main.js": "/niteshsinha17/React-JS-Project.git/static/js/main.abf47419.chunk.js",
+    "main.js.map": "/niteshsinha17/React-JS-Project.git/static/js/main.abf47419.chunk.js.map",
+    "runtime-main.js": "/niteshsinha17/React-JS-Project.git/static/js/runtime-main.486bb7df.js",
+    "runtime-main.js.map": "/niteshsinha17/React-JS-Project.git/static/js/runtime-main.486bb7df.js.map",
+    "static/css/2.2c296f59.chunk.css": "/niteshsinha17/React-JS-Project.git/static/css/2.2c296f59.chunk.css",
+    "static/js/2.3b7ec04a.chunk.js": "/niteshsinha17/React-JS-Project.git/static/js/2.3b7ec04a.chunk.js",
+    "static/js/2.3b7ec04a.chunk.js.map": "/niteshsinha17/React-JS-Project.git/static/js/2.3b7ec04a.chunk.js.map",
+    "index.html": "/niteshsinha17/React-JS-Project.git/index.html",
+    "precache-manifest.544e505b4c1718adb02b3f84c2f9b33b.js": "/niteshsinha17/React-JS-Project.git/precache-manifest.544e505b4c1718adb02b3f84c2f9b33b.js",
+    "service-worker.js": "/niteshsinha17/React-JS-Project.git/service-worker.js",
+    "static/css/2.2c296f59.chunk.css.map": "/niteshsinha17/React-JS-Project.git/static/css/2.2c296f59.chunk.css.map",
+    "static/css/main.db750617.chunk.css.map": "/niteshsinha17/React-JS-Project.git/static/css/main.db750617.chunk.css.map",
+    "static/js/2.3b7ec04a.chunk.js.LICENSE.txt": "/niteshsinha17/React-JS-Project.git/static/js/2.3b7ec04a.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/niteshsinha17/React-JS-Project.git/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.486bb7df.js",
+    "static/css/2.2c296f59.chunk.css",
+    "static/js/2.3b7ec04a.chunk.js",
+    "static/css/main.db750617.chunk.css",
+    "static/js/main.abf47419.chunk.js"
+  ]
+}
