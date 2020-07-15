@@ -121,7 +121,7 @@ class Main extends Component {
             timeout={300}
           >
             <Switch>
-              <Route path="home/" component={home_page} />
+              <Route path="/home" component={home_page} />
               <Route path="/menu/:dishId" component={DishWithId} />
 
               <Route
